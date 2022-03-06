@@ -30,7 +30,7 @@ width:'300px',
 height:'100px',
 //  card styling for smaller devices
 [theme.breakpoints.only('sm')]:{
-width:'280px',
+width:'100vw',
 height:'100%',
 padding:'0% 5% 0% 5%'
 },
