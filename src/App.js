@@ -108,8 +108,6 @@ const classes = myStyles();
 </Row>
 <Row id ='updates' className={classes.Updates}>
   <Updates/>
-</Row>
-<Row>
   <Footer/>
 </Row>
 
