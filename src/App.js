@@ -60,8 +60,6 @@ Agenda:{
 },
 Updates:{
   textAlign:'center',
-  height:'100vh',
-  backgroundColor:'yellow',
 },
 cont:{
   display:'flex',
@@ -102,15 +100,15 @@ const classes = myStyles();
     </p>
   </div>
 </Row>
-
 <Row className={classes.Agenda} id ='agenda'>
   <Agenda/>
 </Row>
-<Row id ='updates' className={classes.Updates}>
-  <Updates/>
-  <Footer/>
+<Row id ='updates' style={{height:'100vh'}}>
+  <Updates className={classes.Updates}/>
 </Row>
-
+<Row>
+<Footer/>
+</Row>
 </Grid>
   );
 }

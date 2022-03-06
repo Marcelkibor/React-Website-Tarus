@@ -29,19 +29,18 @@ cardSpacer: {
 width:'300px',
 height:'100px',
 //  card styling for smaller devices
-[theme.breakpoints.only('sm')]:{
+[theme.breakpoints.down('sm')]:{
 width:'100vw',
 height:'100%',
-padding:'0% 5% 0% 5%'
 },
 //  card styling for extra smaller devices
-[theme.breakpoints.only('xs')]:{
-  width:'80vw',
-  height:'100%',
-  padding:'3% 0% 0% 0%',
-  margin:'0% 0% 0% 5%'
+// [theme.breakpoints.only('xs')]:{
+//   width:'80vw',
+//   height:'100%',
+//   padding:'3% 0% 0% 0%',
+//   margin:'0% 0% 0% 5%'
 
-  },
+//   },
 //  card styling for medium and upper devices 
 [theme.breakpoints.up('sm')]:{
 width:'400px',
@@ -75,7 +74,7 @@ const classes = useStyles();
 {/* Avocado card */}
 <Card className = {classes.cardSpacer}>
 <h5 style={{padding: '5% 0% 2% 5%'}}>
-<b>Avocados</b>
+<b>Afya kwa wote</b>
 </h5>
 <CardMedia className={classes.imageTransform}
 height="200"
@@ -109,7 +108,7 @@ aria-label=" Rooms Prices">
 {/* Strawbaerry card. */}
 <Card className = {classes.cardSpacer}>
 <h5 style={{padding: '5% 0% 2% 5%'}}>
-<b>Strawberries</b>
+<b>Kilimo Bora</b>
 </h5>
 <CardMedia className={classes.imageTransform}
 component="img"
@@ -143,7 +142,7 @@ aria-label="show more">
 <Col className={classes.cardColumn}>
 <Card className = {classes.cardSpacer}>
 <h5 style={{padding: '5% 0% 2% 5%'}}>
-<b>Passion fruits</b>
+<b>Maendeleo za kisasa</b>
 </h5>
 <CardMedia className={classes.imageTransform}
 component="img"
