@@ -1,10 +1,11 @@
 import './App.css';
 import React from 'react';
-import { Container, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import Navigate from './components/Navigate';
 import HomeCont from './components/HomeCont';
-import Sal from './resources/David.jpg'
-import Hicon from './resources/sal.gif'
+import Sal from './resources/David.jpg';
+import Hicon from './resources/sal.gif';
+import mp from './resources/dev.png';
 import { Grid, makeStyles } from '@material-ui/core';
 import Hme from './resources/bgHome.png' 
 import Agenda from './components/Agenda';
@@ -12,6 +13,9 @@ import Updates from './components/Updates';
 import Footer from './components/Footer';
 
 const myStyles = makeStyles((theme) => ({
+  topRow:{
+position:'relative',
+  },
   images: {
     backgroundImage: `url(${Sal})`,
     height: '90vh',
@@ -20,8 +24,7 @@ const myStyles = makeStyles((theme) => ({
     backgroundRepeat:'no-repeat',
     backgroundSize:'cover',
   [theme.breakpoints.down('sm')]:{
-backgroundImage:'none',
-height: '0px',
+
   }  
   },
   hmeTxt:{
@@ -33,9 +36,23 @@ height: '0px',
       display:'none',
     },
 },
-imgHIDE:{
+mp:{
+position:'absolute',
+color:'white',
 
-  height: '100%'
+[theme.breakpoints.down('sm')]:{
+  textAlign:'center',
+},
+},
+mpRow:{
+  position:'absolute',
+},
+theHomeText:{
+fontSize: '25px',
+fontFamily: 'Playfair Display, serif',
+fontStyle: 'italic',
+color:'white',
+width:'500px',
 },
 Agenda:{
   textAlign:'center',
@@ -45,24 +62,47 @@ Updates:{
   textAlign:'center',
   height:'100vh',
   backgroundColor:'yellow',
-}
+},
+cont:{
+  display:'flex',
+  justifyContent:'center',
+  alignItems:'center',
+  position:'absolute',
+  paddingLeft: 'inherit',
+  paddingRight: 'inherit',
+  paddingTop:'inherit',
+ top:'30vh',
+ [theme.breakpoints.down('sm')]:{
+   top:'10vh',
+ }
 
+
+},
+imgCol:{
+  [theme.breakpoints.down('sm')]:{
+    display:'none',  
+  },
+}
   }));
 
 function App(){ 
 const classes = myStyles();
   return (
-    <Grid container-fluid spacing={2}>
-<Row>
+<Grid container-fluid="true" >
+<Row id='navigate'>
   <Navigate/>
 </Row>
-<Row>
+<Row className={classes.topRow}>
   <div className={classes.images}></div>
-  <div className={classes.hmeTxt}>
-  <p>David Tarus</p>
-  <img src={Hicon} alt = 'image here' className={classes.imgHIDE}/>
+  <div className={classes.cont}>
+    <p className={classes.theHomeText}>
+      <h1>KARIBU MOSOP.</h1>
+    You, the people of mosop, spoke clearly. We want dignity;
+     we want to put enough food on our tables, and we want a lower cost of living. 
+    </p>
   </div>
 </Row>
+
 <Row className={classes.Agenda} id ='agenda'>
   <Agenda/>
 </Row>
@@ -72,8 +112,8 @@ const classes = myStyles();
 <Row>
   <Footer/>
 </Row>
-    </Grid>
 
+</Grid>
   );
 }
 
