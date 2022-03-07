@@ -11,6 +11,7 @@ import Hme from './resources/bgHome.png'
 import Agenda from './components/Agenda';
 import Updates from './components/Updates';
 import Footer from './components/Footer';
+import CarouselComponent from './components/CarouselComponent';
 
 const myStyles = makeStyles((theme) => ({
   topRow:{
@@ -93,7 +94,7 @@ disappearingImage:{
   paddingLeft: 'inherit',
   paddingRight: 'inherit',
   paddingTop:'inherit',
- top:'10vh',
+ top:'5vh',
  [theme.breakpoints.down('sm')]:{
 display:'none',
 visibility: 'none'
@@ -123,6 +124,7 @@ const classes = myStyles();
 </Row>
 <Row className={classes.Agenda} id ='agenda'>
   <Agenda/>
+  <CarouselComponent/>
 </Row>
 <Row id ='updates' style={{height:'100vh'}}>
   <Updates className={classes.Updates}/>
