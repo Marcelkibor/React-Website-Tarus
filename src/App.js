@@ -12,7 +12,6 @@ import Agenda from './components/Agenda';
 import Updates from './components/Updates';
 import Footer from './components/Footer';
 import CarouselComponent from './components/CarouselComponent';
-
 const myStyles = makeStyles((theme) => ({
   topRow:{
 position:'relative',
@@ -25,7 +24,7 @@ position:'relative',
     backgroundRepeat:'no-repeat',
     backgroundSize:'cover',
   [theme.breakpoints.down('sm')]:{
-
+    height:'60vh'
   }  
   },
   hmeTxt:{
@@ -40,7 +39,6 @@ position:'relative',
 mp:{
 position:'absolute',
 color:'white',
-
 [theme.breakpoints.down('sm')]:{
   textAlign:'center',
 },
@@ -80,8 +78,6 @@ cont:{
    top:'10vh',
    left:'0vw',
  }
-
-
 },
 imgCol:{
   [theme.breakpoints.down('sm')]:{
@@ -101,7 +97,6 @@ visibility: 'none'
  },
 },
   }));
-
 function App(){ 
 const classes = myStyles();
   return (
@@ -122,11 +117,11 @@ const classes = myStyles();
   <img src={mp} className= 'img-fluid' style={{height:'500px'}}/>
   </div>
 </Row>
-<Row id ='updates' style={{height:'100vh'}}>
+<Row id ='updates' >
   <Updates className={classes.Updates}/>
+  <Agenda/>
 </Row>
 <Row className={classes.Agenda} id ='agenda'>
-  <Agenda/>
   <CarouselComponent/>
 </Row>
 <Row>
