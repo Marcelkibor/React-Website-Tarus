@@ -2,11 +2,12 @@ import React from 'react'
 import '../App.css'
 import Sal from '../resources/sal.gif' 
 import {Navbar,Nav} from 'react-bootstrap';
+import uda from '../resources/uda.png'
 function Navigate() {
   return (
     <div id ='navigation'>
   <Navbar expand="lg" className = 'navbar-custom'>
-  <Navbar.Brand href="#home"><h4 style={{color:'white'}}>David Tarus</h4></Navbar.Brand>
+  <Navbar.Brand href="#home"><h4 style={{color:'white'}}><img src={uda} className = 'img-fluid'style={{height:'90px'}}/> David Tarus </h4></Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav" style ={{magin:'25%'}}>  
   <Nav className="mr-auto items_spacer" >
