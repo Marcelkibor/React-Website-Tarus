@@ -61,7 +61,7 @@ width:'500px',
 },
 Agenda:{
   textAlign:'center',
-  height:'100vh',
+  height:'100%',
 },
 Updates:{
   textAlign:'center',
@@ -122,12 +122,12 @@ const classes = myStyles();
   <img src={mp} className= 'img-fluid' style={{height:'500px'}}/>
   </div>
 </Row>
+<Row id ='updates' style={{height:'100vh'}}>
+  <Updates className={classes.Updates}/>
+</Row>
 <Row className={classes.Agenda} id ='agenda'>
   <Agenda/>
   <CarouselComponent/>
-</Row>
-<Row id ='updates' style={{height:'100vh'}}>
-  <Updates className={classes.Updates}/>
 </Row>
 <Row>
 <Footer/>
