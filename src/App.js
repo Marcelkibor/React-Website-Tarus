@@ -5,7 +5,7 @@ import Navigate from './components/Navigate';
 import HomeCont from './components/HomeCont';
 import Sal from './resources/David.jpg';
 import Hicon from './resources/sal.gif';
-import mp from './resources/dev.png';
+import mp from './resources/devi.png';
 import { Grid, makeStyles } from '@material-ui/core';
 import Hme from './resources/bgHome.png' 
 import Agenda from './components/Agenda';
@@ -53,6 +53,10 @@ fontFamily: 'Playfair Display, serif',
 fontStyle: 'italic',
 color:'white',
 width:'500px',
+[theme.breakpoints.down('sm')]:{
+  fontSize: '20px',
+  width:'75%',
+}
 },
 Agenda:{
   textAlign:'center',
@@ -69,9 +73,11 @@ cont:{
   paddingLeft: 'inherit',
   paddingRight: 'inherit',
   paddingTop:'inherit',
+  left:'10vw',
  top:'30vh',
  [theme.breakpoints.down('sm')]:{
    top:'10vh',
+   left:'0vw',
  }
 
 
@@ -80,7 +86,19 @@ imgCol:{
   [theme.breakpoints.down('sm')]:{
     display:'none',  
   },
-}
+},
+disappearingImage:{
+  display:'flex',
+  position:'absolute',
+  paddingLeft: 'inherit',
+  paddingRight: 'inherit',
+  paddingTop:'inherit',
+ top:'10vh',
+ [theme.breakpoints.down('sm')]:{
+display:'none',
+visibility: 'none'
+ },
+},
   }));
 
 function App(){ 
@@ -98,6 +116,9 @@ const classes = myStyles();
     You, the people of mosop, spoke clearly. We want dignity;
      we want to put enough food on our tables, and we want a lower cost of living. 
     </p>
+  </div>
+  <div className={classes.disappearingImage}> 
+  <img src={mp} className= 'img-fluid' style={{height:'500px'}}/>
   </div>
 </Row>
 <Row className={classes.Agenda} id ='agenda'>
