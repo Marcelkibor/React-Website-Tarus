@@ -4,13 +4,14 @@ import { Col, Container, Row } from 'react-bootstrap';
 import Navigate from './components/Navigate';
 import HomeCont from './components/HomeCont';
 import Sal from './resources/David.jpg';
+import UpdateComp from './components/UpdateComp';
 import Hicon from './resources/sal.gif';
 import mp from './resources/devi.png';
 import { Grid, makeStyles } from '@material-ui/core';
 import Hme from './resources/bgHome.png' 
 import Agenda from './components/Agenda';
-import Updates from './components/Updates';
 import Footer from './components/Footer';
+import { useState } from 'react';
 import CarouselComponent from './components/CarouselComponent';
 const myStyles = makeStyles((theme) => ({
   topRow:{
@@ -85,18 +86,21 @@ imgCol:{
   },
 },
 disappearingImage:{
-  display:'flex',
-  position:'absolute',
-  paddingLeft: 'inherit',
-  paddingRight: 'inherit',
-  paddingTop:'inherit',
- top:'5vh',
- [theme.breakpoints.down('sm')]:{
+display:'flex',
+position:'absolute',
+paddingLeft: 'inherit',
+paddingRight: 'inherit',
+paddingTop:'inherit',
+top:'5vh',
+[theme.breakpoints.down('sm')]:{
 display:'none',
 visibility: 'none'
- },
+},
 },
   }));
+
+
+
 function App(){ 
 const classes = myStyles();
   return (
@@ -108,7 +112,7 @@ const classes = myStyles();
   <div className={classes.images}></div>
   <div className={classes.cont}>
     <p className={classes.theHomeText}>
-      <h1>KARIBU MOSOP.</h1>
+      {/* <h1>KARIBU MOSOP.</h1> */}
     You, the people of mosop, spoke clearly. We want dignity;
      we want to put enough food on our tables, and we want a lower cost of living. 
     </p>
@@ -117,14 +121,13 @@ const classes = myStyles();
   <img src={mp} className= 'img-fluid' style={{height:'500px'}}/>
   </div>
 </Row>
-<Row id ='updates' >
-  <Updates className={classes.Updates}/>
-  <Agenda/>
-</Row>
 <Row className={classes.Agenda} id ='agenda'>
-  <CarouselComponent/>
+<CarouselComponent/>
 </Row>
-<Row>
+<Row id ='updates'>
+  <UpdateComp/>
+</Row>
+<Row id = 'footer'>
 <Footer/>
 </Row>
 </Grid>

@@ -3,19 +3,19 @@
   margin: 0% 0% 0% 0% !important;
   box-sizing: border-box !important;
 }
-  .navbar-custom{
-    background-color: #27ae60;
+  .navbar_custom{
+    background-color: #ae4d27;
     min-height: 80px;
     padding: 0% 0% 0% 2% !important;
   }
+  .navbar_custom.active{
+    background: linear-gradient(90deg,rgb(66,2,194)0%,rgb(0,78,194)100%);
+  }
+
 .items_spacer{
   padding: 0% 0% 0% 2% !important;
 }
 .nav_items{
   padding: 0% 10% 0% 0% !important;
   text-emphasis-color: white;
-}
-.first_row{
- height:'100vh';
- background-color:'yellow';
 }

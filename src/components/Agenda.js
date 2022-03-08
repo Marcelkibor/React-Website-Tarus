@@ -2,7 +2,7 @@ import React from 'react'
 
 function Agenda() {
   return (
-   <div>
+   <div style={{textAlign:'center'}}>
 <h3>Transformational Agenda</h3>
 <p>Measures to ensure we reach 100% self sustainance of food security in MOSOP</p>
    </div>

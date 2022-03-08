@@ -59,14 +59,18 @@ transform: "scale3d(1.2, 1.05, 1)",
 },
 
 }));
-function Cardsing() {
+
+function UpdateComp() {
 const [expanded, setExpanded] = React.useState(false);
 const handleExpandClick = () => {
 setExpanded(!expanded);
 };
 const classes = useStyles();
+
   return (
-<Box style={{backgroundColor:'white',padding:'0% 0% 0% 0%'}}>
+
+<div>
+<Box style={{backgroundColor:'white',padding:'0% 0% 0% 0%',textAlign:'center'}}>
 <Row>
 <h3>Food Security</h3>
 <p>Measures to ensure we reach 100% self sustainance of food security in MOSOP</p>
@@ -174,6 +178,8 @@ aria-label="show more">
 
 </Row>
 </Box>
+    </div>
   )
 }
-export default Cardsing
+
+export default UpdateComp
