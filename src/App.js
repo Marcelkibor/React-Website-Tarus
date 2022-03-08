@@ -97,29 +97,26 @@ display:'none',
 visibility: 'none'
 },
 },
-  }));
-
-
-
+}));
 function App(){ 
 const classes = myStyles();
   return (
 <Grid container-fluid="true" >
 <Row id='navigate'>
-  <Navigate/>
+<Navigate/>
 </Row>
 <Row className={classes.topRow}>
-  <div className={classes.images}></div>
-  <div className={classes.cont}>
-    <p className={classes.theHomeText}>
-      {/* <h1>KARIBU MOSOP.</h1> */}
-    You, the people of mosop, spoke clearly. We want dignity;
-     we want to put enough food on our tables, and we want a lower cost of living. 
-    </p>
-  </div>
-  <div className={classes.disappearingImage}> 
-  <img src={mp} className= 'img-fluid' style={{height:'500px'}}/>
-  </div>
+<div className={classes.images}></div>
+<div className={classes.cont}>
+<div className={classes.theHomeText}>
+<h1>KARIBU MOSOP.</h1>
+You, the people of mosop, spoke clearly. We want dignity;
+we want to put enough food on our tables, and we want a lower cost of living. 
+</div>
+</div>
+<div className={classes.disappearingImage}> 
+<img src={mp} className= 'img-fluid' style={{height:'500px'}}/>
+</div>
 </Row>
 <Row className={classes.Agenda} id ='agenda'>
 <CarouselComponent/>

@@ -11,31 +11,34 @@ imageCarousel:{
 width :'70vw',
 height:'500px',
 },
+componentSpacer:{
+ width:'100vw',
+ height:'90vh',
+},
 }));
 function CarouselComponent() {
 const classes = customStyles();
 return (
 <div>
-<Carousel  autoPlay interval="100" transitionTime="1000" showThumbs={false}>
-<div>
+<Carousel  autoPlay interval="1000" transitionTime="1000" showThumbs={false}>
+<div className={classes.componentSpacer}>
 <img 
 src={car1}
 className ='img-fluid'
-style={{width:'100vw', height:'90vh'}}
 />
 </div>
-<div>
+<div className={classes.componentSpacer}>
 <img 
 src={car2} 
 className ='img-fluid'
-style={{width:'100vw', height:'90vh'}}
+
 />
 </div>
-<div style={{height:'50x'}}>
+<div className={classes.componentSpacer}>
 <img
 src={car3}
 className ='img-fluid'
-style={{width:'100vw', height:'90vh'}}
+
 />
 </div>
 </Carousel>

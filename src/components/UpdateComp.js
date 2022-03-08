@@ -26,26 +26,24 @@ duration: theme.transitions.duration.shortest,
 }));
 const useStyles = makeStyles((theme) => ({
 cardSpacer: {
-width:'300px',
-height:'100px',
-//  card styling for smaller devices
+//  card styling for small and extra small -> okay and done
 [theme.breakpoints.down('sm')]:{
 width:'100vw',
 height:'100%',
 },
-//  card styling for extra smaller devices
-// [theme.breakpoints.only('xs')]:{
-//   width:'80vw',
-//   height:'100%',
-//   padding:'3% 0% 0% 0%',
-//   margin:'0% 0% 0% 5%'
-
-//   },
-//  card styling for medium and upper devices 
-[theme.breakpoints.up('sm')]:{
-width:'400px',
+// card styling for medium devices
+[theme.breakpoints.only('md')]:{
+width:'40vw',
 height:'100%',
-padding:'0% 0% 0% 0%'
+},
+// card styling for large devices
+[theme.breakpoints.only('lg')]:{
+  width:'40vw',
+  height:'100%',
+},
+// card styling for extra large devices
+[theme.breakpoints.only('xl')]:{
+
 },
 },
 cardColumn:{
@@ -70,7 +68,7 @@ const classes = useStyles();
   return (
 
 <div>
-<Box style={{backgroundColor:'white',padding:'0% 0% 0% 0%',textAlign:'center'}}>
+<Box style={{backgroundColor:'white',textAlign:'center'}}>
 <Row>
 <h3>Food Security</h3>
 <p>Measures to ensure we reach 100% self sustainance of food security in MOSOP</p>
