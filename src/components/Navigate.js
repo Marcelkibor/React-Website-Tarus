@@ -34,7 +34,7 @@ const classes = myStyles();
   return (
     <div id ='navigation'>
   <Navbar expand="lg" className = {classes.custom_navbar}>
-  <Navbar.Brand href="#home"><h4 style={{color:'white'}}><img src={uda} className = 'img-fluid'style={{height:'90px'}}/> David Tarus </h4></Navbar.Brand>
+  <Navbar.Brand href="#home"><h4 style={{color:'white'}}>&nbsp;&nbsp;&nbsp;<img src={uda} className = 'img-fluid'style={{height:'90px'}}/> David Tarus </h4></Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav" style ={{magin:'25%'}}>  
   <Nav className="mr-auto items_spacer" >

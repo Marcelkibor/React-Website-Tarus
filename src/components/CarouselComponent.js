@@ -20,6 +20,7 @@ function CarouselComponent() {
 const classes = customStyles();
 return (
 <div>
+  <h1 style ={{textAlign:'center',fontFamily: 'Playfair Display, serif',fontStyle: 'italic'}}>Updates</h1>
 <Carousel  autoPlay interval="1000" transitionTime="1000" showThumbs={false}>
 <div className={classes.componentSpacer}>
 <img 
@@ -45,5 +46,4 @@ className ='img-fluid'
 </div>
   )
 }
-
 export default CarouselComponent
