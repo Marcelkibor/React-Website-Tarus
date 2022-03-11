@@ -8,7 +8,7 @@ import {makeStyles } from '@material-ui/core';
 
 const myStyles = makeStyles((theme) => ({
 custom_navbar:{
-backgroundColor: '#16a085',
+backgroundColor: '#6ab04c',
 minHeight: '80px',
 paddingLeft:'inherit',
 },

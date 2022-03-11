@@ -109,7 +109,7 @@ display:'flex',
 },
 reachRow:{
 backgroundColor:'#f9ca24',
-height:'13vh',
+height:'16vh',
 alignItems:'center',
 //  align row children to center position
 },
@@ -127,7 +127,7 @@ fontWeight:'bolder',
 fontFamily: 'Playfair Display, serif',
 fontStyle: 'italic',
 [theme.breakpoints.down('sm')]:{
-fontSize:'25px'
+fontSize:'19px'
 },
 },
 }));
@@ -136,7 +136,7 @@ const classes = myStyles();
   return (
 <Router>
 <Grid container-fluid="true" >
-<Row className={classes.reachRow}>
+<Row className={classes.reachRow} id = 'banner'>
 <Col>
   <div>
   <h2><span className={classes.reachOutText}>&nbsp;&nbsp;&nbsp;Reach out to us:</span>  <DraftsIcon style={{fontSize:'50px', width:'5%'}}/>
