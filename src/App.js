@@ -122,7 +122,7 @@ fontWeight:'bolder',
   },
 },
 reachOutText:{
-fontSize: '30px',
+fontSize: '40px',
 fontWeight:'bolder',
 fontFamily: 'Playfair Display, serif',
 fontStyle: 'italic',
@@ -139,7 +139,7 @@ const classes = myStyles();
 <Row className={classes.reachRow} id = 'banner'>
 <Col>
   <div>
-  <h2><span className={classes.reachOutText}>&nbsp;&nbsp;&nbsp;Reach out to us:</span>  <DraftsIcon style={{fontSize:'50px', width:'5%'}}/>
+  <h2><span className={classes.reachOutText}>&nbsp;&nbsp;&nbsp;Reach out to us:</span> <br></br> <DraftsIcon style={{fontSize:'50px', width:'5%'}}/>
   <span className ={classes.BannerItems}>kibormarcel90@gmail.com</span>
  <span><Call style={{fontSize:'50px', width:'5%'}}/></span>
  <span className ={classes.BannerItems}>0712345678</span>
