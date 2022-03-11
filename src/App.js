@@ -114,7 +114,7 @@ alignItems:'center',
 //  align row children to center position
 },
 BannerItems:{
-  fontSize:'20px',
+  fontSize:'22px',
   fontFamily: 'Playfair Display, serif',
   [theme.breakpoints.down('sm')]:{
 fontSize:'18px',
@@ -146,12 +146,12 @@ const classes = myStyles();
 <Router>
 <Grid container-fluid="true" >
 <Row className={classes.reachRow} id = 'banner'>
-<Col >
+<Col>
   <div className={classes.BannerColumn}>
   <span className={classes.reachOutText}>Reach out to us:</span> <br></br> <DraftsIcon style = {{fontSize:'50px'}}/>
-  <span className ={classes.BannerItems}>kibormarcel90@gmail.com</span><br></br>
- <span><Call style = {{fontSize:'50px'}}/></span>
- <span className ={classes.BannerItems}>0712345678</span>
+  <span style={{fontWeight:'bolder'}} className ={classes.BannerItems}>davetarus@gmail.com</span><br></br>
+ <span><Call style = {{fontWeight:'bolder', fontSize:'50px'}}/></span>&nbsp;
+ <span style = {{fontWeight:'bolder',fontSize:'16px'}} className ={classes.BannerItems}>0723343719, 0722129279</span>
   </div>
 </Col>
 </Row>
@@ -170,7 +170,7 @@ we want to put enough food on our tables, and we want a lower cost of living.
 </div>
 </div>
 <div className={classes.disappearingImage}> 
-<img src={mp} className= 'img-fluid' style={{height:'500px'}}/>
+<img src={mp} className = 'img-fluid' style={{height:'500px'}}/>
 </div>
 </Row>
 <Row className={classes.Agenda} id ='agenda'>
