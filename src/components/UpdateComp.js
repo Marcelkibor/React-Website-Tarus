@@ -61,6 +61,15 @@ transition: "transform 0.15s ease-in-out",
 transform: "scale3d(1.2, 1.05, 1)",
 },
 },
+mainTypography:{
+textAlign:'center',
+fontSize:'20px',
+},
+updatesheaderText:{
+  textAlign:'center',
+  fontFamily: 'Playfair Display, serif',
+  fontStyle: 'italic', fontSize:'20px'
+},
 
 }));
 
@@ -72,11 +81,9 @@ setExpanded(!expanded);
 const classes = useStyles();
 
   return (
-
 <div>
-<Box style={{backgroundColor:'blue', height:'100vh', padding:'40% 40% 40% 40%'}}>
 <Row>
-<div style ={{textAlign:'center',fontFamily: 'Playfair Display, serif',fontStyle: 'italic', fontSize:'20px'}}>
+<div className = {classes.updatesheaderText} id = 'updatesheaderText'>
 <h1>Food Security</h1>
 <p>Measures to ensure we reach 100% self sustainance of food security in MOSOP</p>
 </div>
@@ -93,7 +100,7 @@ image = {ova}
 alt="bed and breakfast"
 />
 <CardContent >
-<Typography variant="body2" color="text.secondary">
+<Typography className={classes.mainTypography}>
 Natured carefully and selection is done from only the finest ones.
 </Typography>
 </CardContent>
@@ -127,7 +134,7 @@ image = {straw}
 alt="Paella dish"
 />
 <CardContent>
-<Typography variant="body2" color="text.secondary">
+<Typography className={classes.mainTypography}>
 Natured carefully and selection is done from only the finest ones.
 </Typography>
 </CardContent>
@@ -158,10 +165,9 @@ aria-label="show more">
 component="img"
 height="200"
 image = {pas}
-alt="Paella dish"
-/>
+alt="Paella dish"/>
 <CardContent>
-<Typography variant="body2" color="text.secondary">
+<Typography className={classes.mainTypography}>
 It is easy to incorporate this fruit into a nutritious diet in multiple ways </Typography>
 </CardContent>
 <CardActions disableSpacing>
@@ -181,9 +187,7 @@ aria-label="show more">
 </Collapse>
 </Card> 
 </Col>
-
 </Row>
-</Box>
     </div>
   )
 }

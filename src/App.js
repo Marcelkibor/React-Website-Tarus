@@ -8,7 +8,6 @@ import UpdateComp from './components/UpdateComp';
 import Hicon from './resources/sal.gif';
 import mp from './resources/devi.png';
 import { Grid, makeStyles } from '@material-ui/core';
-import Hme from './resources/bgHome.png' 
 import Agenda from './components/Agenda';
 import { BrowserRouter as Router,Route,Routes } from 'react-router-dom';
 import Footer from './components/Footer';
@@ -23,13 +22,15 @@ position:'relative',
   },
   images: {
     backgroundImage: `url(${Sal})`,
-    height: '90vh',
+    height: '100vh',
     width: '100%',    
     position:'relative',
     backgroundRepeat:'no-repeat',
     backgroundSize:'cover',
   [theme.breakpoints.down('sm')]:{
-    height:'60vh'
+    height:'60vh',
+    backgroundImage:'none',
+    backgroundColor:'white'
   }  
   },
   hmeTxt:{
@@ -60,6 +61,7 @@ width:'500px',
 [theme.breakpoints.down('sm')]:{
   fontSize: '20px',
   width:'75%',
+  color:'black',
 }
 },
 Agenda:{
@@ -78,7 +80,7 @@ cont:{
   paddingRight: 'inherit',
   paddingTop:'inherit',
   left:'10vw',
- top:'30vh',
+ top:'10vh',
  [theme.breakpoints.down('sm')]:{
    top:'10vh',
    left:'0vw',
@@ -108,7 +110,7 @@ backgroundColor:'#f39c12',
 display:'flex',
 },
 reachRow:{
-backgroundColor:'#f9ca24',
+backgroundColor:'#F79F1F',
 height:'100%',
 alignItems:'center',
 //  align row children to center position
@@ -143,12 +145,11 @@ fontSize:'35px',
 function App(){ 
 const classes = myStyles();
   return (
-<Router>
 <Grid container-fluid="true" >
 <Row className={classes.reachRow} id = 'banner'>
 <Col>
   <div className={classes.BannerColumn}>
-  <span className={classes.reachOutText}>Reach out to us:</span> <br></br> <DraftsIcon style = {{fontSize:'50px'}}/>
+  <span className={classes.reachOutText}>Reach out....</span> <br></br> <DraftsIcon style = {{fontSize:'50px'}}/>
   <span style={{fontWeight:'bolder'}} className ={classes.BannerItems}>davetarus@gmail.com</span><br></br>
  <span><Call style = {{fontWeight:'bolder', fontSize:'50px'}}/></span>&nbsp;
  <span style = {{fontWeight:'bolder',fontSize:'16px'}} className ={classes.BannerItems}>0723343719, 0722129279</span>
@@ -173,9 +174,6 @@ we want to put enough food on our tables, and we want a lower cost of living.
 <img src={mp} className = 'img-fluid' style={{height:'500px'}}/>
 </div>
 </Row>
-<Row className={classes.Agenda} id ='agenda'>
-<CarouselComponent/>
-</Row>
 <Row id ='updates'>
 <UpdateComp/>
 </Row>
@@ -183,10 +181,6 @@ we want to put enough food on our tables, and we want a lower cost of living.
 <Footer/>
 </Row>
 </Grid>
-<Routes>
-  <Route path='/form'/>
-</Routes>
-</Router>
   );
 }
 
