@@ -109,7 +109,7 @@ display:'flex',
 },
 reachRow:{
 backgroundColor:'#f9ca24',
-height:'16vh',
+height:'100%',
 alignItems:'center',
 //  align row children to center position
 },
@@ -133,6 +133,12 @@ fontSize:'30px',
 BannerColumn:{
 textAlign:'center'
 },
+bannerIcons:{
+fontSize:'50px',
+[theme.breakpoints.down('sm')]:{
+fontSize:'35px',
+},
+},
 }));
 function App(){ 
 const classes = myStyles();
@@ -142,11 +148,10 @@ const classes = myStyles();
 <Row className={classes.reachRow} id = 'banner'>
 <Col >
   <div className={classes.BannerColumn}>
-  <h2><span className={classes.reachOutText}>Reach out to us:</span> <br></br> <DraftsIcon style={{fontSize:'50px'}}/>
-  <span className ={classes.BannerItems}>kibormarcel90@gmail.com</span>
- <span><Call style={{fontSize:'50px'}}/></span>
+  <span className={classes.reachOutText}>Reach out to us:</span> <br></br> <DraftsIcon style = {{fontSize:'50px'}}/>
+  <span className ={classes.BannerItems}>kibormarcel90@gmail.com</span><br></br>
+ <span><Call style = {{fontSize:'50px'}}/></span>
  <span className ={classes.BannerItems}>0712345678</span>
-  </h2>
   </div>
 </Col>
 </Row>
