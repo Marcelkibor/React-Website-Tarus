@@ -117,7 +117,7 @@ BannerItems:{
   fontSize:'20px',
   fontFamily: 'Playfair Display, serif',
   [theme.breakpoints.down('sm')]:{
-fontSize:'12px',
+fontSize:'18px',
 fontWeight:'bolder',
   },
 },
@@ -127,8 +127,11 @@ fontWeight:'bolder',
 fontFamily: 'Playfair Display, serif',
 fontStyle: 'italic',
 [theme.breakpoints.down('sm')]:{
-fontSize:'19px'
+fontSize:'30px',
 },
+},
+BannerColumn:{
+textAlign:'center'
 },
 }));
 function App(){ 
@@ -137,11 +140,11 @@ const classes = myStyles();
 <Router>
 <Grid container-fluid="true" >
 <Row className={classes.reachRow} id = 'banner'>
-<Col>
-  <div>
-  <h2><span className={classes.reachOutText}>&nbsp;&nbsp;&nbsp;Reach out to us:</span> <br></br> <DraftsIcon style={{fontSize:'50px', width:'5%'}}/>
+<Col >
+  <div className={classes.BannerColumn}>
+  <h2><span className={classes.reachOutText}>Reach out to us:</span> <br></br> <DraftsIcon style={{fontSize:'50px'}}/>
   <span className ={classes.BannerItems}>kibormarcel90@gmail.com</span>
- <span><Call style={{fontSize:'50px', width:'5%'}}/></span>
+ <span><Call style={{fontSize:'50px'}}/></span>
  <span className ={classes.BannerItems}>0712345678</span>
   </h2>
   </div>
