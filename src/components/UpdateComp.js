@@ -5,6 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import straw from '../resources/straw.jpg';
 import { useState } from 'react';
 import ova from '../resources/ova.jpg';
+import '../App.css'
 import pas from '../resources/pas.jpg'
 import { Row,Col } from 'react-bootstrap';
 import Collapse from '@mui/material/Collapse';
@@ -32,18 +33,18 @@ cardSpacer: {
   height:'100%',
 },
 //  card styling for small devices -> okay and done
-[theme.breakpoints.only('sm')]:{
-width:'100vw',
+[theme.breakpoints.only('xs')]:{
+width:'90vw',
 height:'100%',
 },
 // card styling for medium devices
 [theme.breakpoints.only('md')]:{
-width:'300px',
+width:'320px',
 height:'100%',
 },
 // card styling for large devices
 [theme.breakpoints.only('lg')]:{
-  width:'300px',
+  width:'320px',
   height:'100%',
 },
 // card styling for extra large devices
@@ -51,9 +52,6 @@ height:'100%',
   width:'400px',
   height:'100%',
 },
-},
-cardColumn:{
-padding:'0% 0% 3% 0%',
 },
 imageTransform:{
 '&:hover': {
@@ -82,15 +80,15 @@ const classes = useStyles();
 
   return (
 <div>
-<Row>
+<Row >
 <div className = {classes.updatesheaderText} id = 'updatesheaderText'>
 <h1>Food Security</h1>
 <p>Measures to ensure we reach 100% self sustainance of food security in MOSOP</p>
 </div>
-<Col>
+<Col className= 'generalcardsRow'>
 {/* Avocado card */}
-<Card className = {classes.cardSpacer}>
-<h5>
+<Card className = {classes.cardSpacer} elevation = {7} >
+<h5 className='topCardsMessage'>
 <b>Afya kwa wote</b>
 </h5>
 <CardMedia className={classes.imageTransform}
@@ -115,16 +113,16 @@ aria-label=" Rooms Prices">
 </CardActions>
 <Collapse in={expanded} timeout="auto" unmountOnExit>
 <CardContent>
-<Typography paragraph><b>Pricing :</b> Per Kg <b>300</b></Typography>  
+<Typography paragraph><b>Pricing :</b> Per Kg <b>300 </b></Typography>  
 <Typography paragraph><b>Variety:</b> Hass</Typography>    
 </CardContent>
 </Collapse>
 </Card>
 </Col>
-<Col>
+<Col className= 'generalcardsRow'>
 {/* Strawbaerry card. */}
-<Card className = {classes.cardSpacer}>
-<h5 style={{padding: '5% 0% 2% 5%'}}>
+<Card className = {classes.cardSpacer} elevation = {7}>
+<h5>
 <b>Kilimo Bora</b>
 </h5>
 <CardMedia className={classes.imageTransform}
@@ -149,16 +147,16 @@ aria-label="show more">
 </CardActions>
 <Collapse in={expanded} timeout="auto" unmountOnExit>
 <CardContent>
-<Typography paragraph><b>Pricing :</b> Per Palette <b>100</b></Typography>  
+<Typography paragraph><b>Pricing :</b> Per Palette < b>100</b></Typography>  
 <Typography paragraph><b>Variety:</b> Chandelier Strawberry</Typography>     
 </CardContent>
 </Collapse>
 </Card> 
 </Col>
 {/* Passion card done*/ }
-<Col>
-<Card className = {classes.cardSpacer}>
-<h5 style={{padding: '5% 0% 2% 5%'}}>
+<Col className= 'generalcardsRow'>
+<Card className = {classes.cardSpacer} elevation = {7}>
+<h5>
 <b>Maendeleo za kisasa</b>
 </h5>
 <CardMedia className={classes.imageTransform}

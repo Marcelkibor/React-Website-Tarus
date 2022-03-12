@@ -11,6 +11,7 @@ import { Grid, makeStyles } from '@material-ui/core';
 import Agenda from './components/Agenda';
 import { BrowserRouter as Router,Route,Routes } from 'react-router-dom';
 import Footer from './components/Footer';
+import smBg from './resources/smBg.jpg';
 import { useState } from 'react';
 import CarouselComponent from './components/CarouselComponent';
 import DraftsIcon from '@mui/icons-material/Drafts';
@@ -29,8 +30,9 @@ position:'relative',
     backgroundSize:'cover',
   [theme.breakpoints.down('sm')]:{
     height:'60vh',
-    backgroundImage:'none',
-    backgroundColor:'white'
+    backgroundImage:`url(${smBg})`,
+    backgroundSize:'cover',
+    backgroundRepeat:'repeat',
   }  
   },
   hmeTxt:{
