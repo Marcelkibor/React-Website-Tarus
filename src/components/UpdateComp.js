@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
 cardSpacer: {
 [theme.breakpoints.only('xs')]:{
   width:'100vw',
-  height:'100%',
+  height:'300px',
 },
 //  card styling for small devices -> okay and done
 [theme.breakpoints.only('xs')]:{
@@ -40,17 +40,17 @@ height:'100%',
 // card styling for medium devices
 [theme.breakpoints.only('md')]:{
 width:'320px',
-height:'100%',
+height:'300px',
 },
 // card styling for large devices
 [theme.breakpoints.only('lg')]:{
   width:'320px',
-  height:'100%',
+  height:'300px',
 },
 // card styling for extra large devices
 [theme.breakpoints.only('xl')]:{
   width:'400px',
-  height:'100%',
+  height:'300px',
 },
 },
 imageTransform:{
@@ -68,6 +68,13 @@ updatesheaderText:{
   fontFamily: 'Playfair Display, serif',
   fontStyle: 'italic', fontSize:'20px'
 },
+mainupdatesRow:{
+  backgroundColor:'#1e272e',
+  height:'90vh',
+  [theme.breakpoints.down('sm')]:{
+    height:'100%',
+  }
+},
 
 }));
 
@@ -80,11 +87,11 @@ const classes = useStyles();
 
   return (
 <div>
-<Row >
+<Row className = {classes.mainupdatesRow}>
 <div className = {classes.updatesheaderText} id = 'updatesheaderText'>
-<h1>Food Security</h1>
-<p>Measures to ensure we reach 100% self sustainance of food security in MOSOP</p>
-</div>
+<h1 style={{color:'#ffa801'}}> Agenda</h1>
+<p style={{color:'white'}}>Measures to ensure we reach 100% self sustainance and development in Mosop</p>
+</div><br></br>
 <Col className= 'generalcardsRow'>
 {/* Avocado card */}
 <Card className = {classes.cardSpacer} elevation = {7} >
