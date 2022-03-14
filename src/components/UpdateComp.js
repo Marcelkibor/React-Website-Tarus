@@ -30,27 +30,27 @@ const useStyles = makeStyles((theme) => ({
 cardSpacer: {
 [theme.breakpoints.only('xs')]:{
   width:'100vw',
-  height:'300px',
+  height:'100%',
 },
 //  card styling for small devices -> okay and done
 [theme.breakpoints.only('xs')]:{
-width:'100vw',
+width:'95vw',
 height:'100%',
 },
 // card styling for medium devices
 [theme.breakpoints.only('md')]:{
 width:'320px',
-height:'300px',
+height:'100%',
 },
 // card styling for large devices
 [theme.breakpoints.only('lg')]:{
   width:'360px',
-  height:'300px',
+  height:'100%',
 },
 // card styling for extra large devices
 [theme.breakpoints.only('xl')]:{
   width:'400px',
-  height:'300px',
+  height:'100%',
 },
 },
 imageTransform:{

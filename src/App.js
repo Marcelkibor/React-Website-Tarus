@@ -99,7 +99,9 @@ position:'absolute',
 paddingLeft: 'inherit',
 paddingRight: 'inherit',
 paddingTop:'inherit',
-top:'5vh',
+top:'1vh',
+height:'100px',
+width:'400px',
 [theme.breakpoints.down('sm')]:{
 display:'none',
 visibility: 'none'
@@ -176,10 +178,10 @@ we want to put enough food on our tables, and we want a lower cost of living.
 <img src={mp} className = 'img-fluid' style={{height:'500px'}}/>
 </div>
 </Row>
-<Row id ='updates'>
+<Row id ='updates' >
 <UpdateComp/>
 </Row>
-<Row id = 'footer'>
+<Row id = 'footer' className='customFooter'>
 <Footer/>
 </Row>
 </Grid>
