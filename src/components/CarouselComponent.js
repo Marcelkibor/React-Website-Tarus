@@ -17,20 +17,19 @@ componentSpacer:{
  alignItems:'center',
  textAlign:'center',
  [theme.breakpoints.down('sm')]:{
-display:'block'
+display:'none'
  },},
-
 }));
 function CarouselComponent() {
 const classes = customStyles();
 const resImg = 'img-fluid'
 return (
 <div>
-<Carousel  autoPlay interval="6000" transitionTime="1000" showThumbs={false}>
+<Carousel  autoPlay interval="6000" transitionTime="1000" showThumbs={false} className = 'mainCarousel'>
 <div className={classes.componentSpacer}>
   <img 
 src={car1}
-className ='carouselImages'
+className ='carouselImages img-fluid'
 />
 <Card className='carouselCard'>
   <CardContent>
@@ -41,10 +40,10 @@ className ='carouselImages'
   </CardContent>
 </Card>
 </div>
-<div className={classes.componentSpacer}>
+<div className={classes.componentSpacer }>
   <img 
 src={car2} 
-className = 'carouselImages'
+className = 'carouselImages img-fluid'
 />
 <Card className='carouselCard'>
   <CardContent>
@@ -57,7 +56,7 @@ className = 'carouselImages'
 <div className={classes.componentSpacer}>
   <img 
 src={car3} 
-className = 'carouselImages'
+className = 'carouselImages img-fluid'
 />
 <Card className='carouselCard'>
   <CardContent>

@@ -24,9 +24,4 @@ width: 100% !important;
 .carouselImages{
   height: 50vh !important;
   width: 50vw !important;
-  @media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
-  }
 }
