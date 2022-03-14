@@ -7,40 +7,42 @@ import { makeStyles } from '@material-ui/core';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const customStyles = makeStyles((theme)=>({
-imageCarousel:{
-width :'70vw',
-height:'500px',
-},
 componentSpacer:{
- width:'100vw',
- height:'90vh',
+ width:'80vw',
+ height:'100%',
+ display:'flex',
+ alignItems:'center',
+ textAlign:'center'
 },
 }));
 function CarouselComponent() {
 const classes = customStyles();
 return (
 <div>
-  <h1 style ={{textAlign:'center',fontFamily: 'Playfair Display, serif',fontStyle: 'italic'}}>Updates</h1>
-<Carousel  autoPlay interval="1000" transitionTime="1000" showThumbs={false}>
+<Carousel  autoPlay interval="6000" transitionTime="1000" showThumbs={false}>
 <div className={classes.componentSpacer}>
 <img 
 src={car1}
 className ='img-fluid'
+style={{height:'60vh', width:'65vw'}}
 />
+<p className = {classes.dissaperingParag} style={{color:'black'}}>Coffee distribution program is now underway as one of the thing </p>
 </div>
 <div className={classes.componentSpacer}>
 <img 
 src={car2} 
 className ='img-fluid'
-
+style={{height:'60vh', width:'65vw'}}
 />
+<p className = {classes.dissaperingParag} style={{color:'black'}}>Coffee distribution program is now underway as one of the thing </p>
 </div>
 <div className={classes.componentSpacer}>
 <img
 src={car3}
 className ='img-fluid'
-
+style={{height:'60vh', width:'65vw'}}
 />
+<p className = {classes.dissaperingParag} style={{color:'black'}}>Coffee distribution program is now underway as one of the thing </p>
 </div>
 </Carousel>
 </div>
