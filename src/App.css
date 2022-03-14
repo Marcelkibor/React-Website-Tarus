@@ -10,6 +10,22 @@
 padding: 3% 0% 0% 1.2% !important;
 }
 .customFooter{
-  padding:10% 0% 0% 0% !important;
-  background-color: #1e272e;
+  padding:0% 0% 0% 0% !important;
+  /* background-color: white; */
+}
+.carousel_row{
+  padding: 3% 0% 3% 3% !important;
+  background-color: white;
+}
+.carouselCard{
+padding: 0% 0% 0% 4% !important;
+}
+.carouselImages{
+  height: 50vh !important;
+  width: 50vw !important;
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
 }

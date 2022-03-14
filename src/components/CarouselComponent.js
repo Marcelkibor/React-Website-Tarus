@@ -5,6 +5,8 @@ import car2 from '../resources/car2.jpg';
 import car3 from '../resources/car3.jpg';
 import { makeStyles } from '@material-ui/core';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Card, CardContent,Typography } from '@mui/material';
+import { height, style } from '@mui/system';
 
 const customStyles = makeStyles((theme)=>({
 componentSpacer:{
@@ -12,37 +14,57 @@ componentSpacer:{
  height:'100%',
  display:'flex',
  alignItems:'center',
- textAlign:'center'
-},
+ textAlign:'center',
+ [theme.breakpoints.down('sm')]:{
+display:'block'
+ },},
+
 }));
 function CarouselComponent() {
 const classes = customStyles();
+const resImg = 'img-fluid'
 return (
 <div>
 <Carousel  autoPlay interval="6000" transitionTime="1000" showThumbs={false}>
 <div className={classes.componentSpacer}>
-<img 
+  <img 
 src={car1}
-className ='img-fluid'
-style={{height:'60vh', width:'65vw'}}
+className ='carouselImages'
 />
-<p className = {classes.dissaperingParag} style={{color:'black'}}>Coffee distribution program is now underway as one of the thing </p>
+<Card className='carouselCard'>
+  <CardContent>
+    <Typography>
+    Coffee distribution program
+    <br></br>is now underway as one of the thing
+    </Typography>
+  </CardContent>
+</Card>
 </div>
 <div className={classes.componentSpacer}>
-<img 
+  <img 
 src={car2} 
-className ='img-fluid'
-style={{height:'60vh', width:'65vw'}}
+className = 'carouselImages'
 />
-<p className = {classes.dissaperingParag} style={{color:'black'}}>Coffee distribution program is now underway as one of the thing </p>
+<Card className='carouselCard'>
+  <CardContent>
+    <Typography>
+    Coffee distribution program <br></br>is now underway as one of the thing
+    </Typography>
+  </CardContent>
+</Card>
 </div>
 <div className={classes.componentSpacer}>
-<img
-src={car3}
-className ='img-fluid'
-style={{height:'60vh', width:'65vw'}}
+  <img 
+src={car3} 
+className = 'carouselImages'
 />
-<p className = {classes.dissaperingParag} style={{color:'black'}}>Coffee distribution program is now underway as one of the thing </p>
+<Card className='carouselCard'>
+  <CardContent>
+    <Typography>
+    Coffee distribution program<br></br> is now underway as one of the thing
+    </Typography>
+  </CardContent>
+</Card>
 </div>
 </Carousel>
 </div>
