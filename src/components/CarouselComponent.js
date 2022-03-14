@@ -12,6 +12,7 @@ const customStyles = makeStyles((theme)=>({
 componentSpacer:{
  width:'80vw',
  height:'100%',
+ backgroundColor:'orange',
  display:'flex',
  alignItems:'center',
  textAlign:'center',
