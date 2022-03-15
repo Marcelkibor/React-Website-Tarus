@@ -16,9 +16,14 @@ componentSpacer:{
  display:'flex',
  alignItems:'center',
  textAlign:'center',
- [theme.breakpoints.down('sm')]:{
+ [theme.breakpoints.down('md')]:{
 display:'none'
  },},
+ componentSpacerSmall:{
+[theme.breakpoints.up('sm')]:{
+  display:'none'
+}
+ },
 }));
 function CarouselComponent() {
 const classes = customStyles();
@@ -57,6 +62,49 @@ className = 'carouselImages img-fluid'
   <img 
 src={car3} 
 className = 'carouselImages img-fluid'
+/>
+<Card className='carouselCard'>
+  <CardContent>
+    <Typography>
+    Coffee distribution program<br></br> is now underway as one of the thing
+    </Typography>
+  </CardContent>
+</Card>
+</div>
+</Carousel>
+{/* second carousel for smaller devices */}
+<Carousel  autoPlay interval="6000" transitionTime="1000" showThumbs={false} className = 'mainCarousel'>
+<div className={classes.componentSpacerSmall}>
+  <img 
+src={car1}
+className ='carouselImagesSmall img-fluid'
+/>
+<Card className='carouselCard'>
+  <CardContent>
+    <Typography>
+    Coffee distribution program
+    <br></br>is now underway as one of the thing
+    </Typography>
+  </CardContent>
+</Card>
+</div>
+<div className={classes.componentSpacerSmall}>
+  <img 
+src={car2} 
+className = 'carouselImagesSmall img-fluid'
+/>
+<Card className='carouselCard'>
+  <CardContent>
+    <Typography>
+    Coffee distribution program <br></br>is now underway as one of the thing
+    </Typography>
+  </CardContent>
+</Card>
+</div>
+<div className={classes.componentSpacerSmall}>
+  <img 
+src={car3} 
+className = 'carouselImagesSmall img-fluid'
 />
 <Card className='carouselCard'>
   <CardContent>
