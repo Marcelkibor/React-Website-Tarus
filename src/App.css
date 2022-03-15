@@ -20,6 +20,7 @@ padding: 3% 0% 0% 1.2% !important;
 .carouselCard{
 padding: 0% 0% 0% 4% !important;
 width: 100% !important;
+height: 100px;
 }
 .carouselImages{
   height: 50vh !important;

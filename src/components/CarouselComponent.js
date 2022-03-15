@@ -39,8 +39,9 @@ className ='carouselImages img-fluid'
 <Card className='carouselCard'>
   <CardContent>
     <Typography>
-    Coffee distribution program
-    <br></br>is now underway as one of the thing
+    <b>The journey</b> to branch from consumer based farming to income generation is already underway.
+     Mosop is blessed with fertile land that supports various income generating cash crops.
+
     </Typography>
   </CardContent>
 </Card>
@@ -53,7 +54,9 @@ className = 'carouselImages img-fluid'
 <Card className='carouselCard'>
   <CardContent>
     <Typography>
-    Coffee distribution program <br></br>is now underway as one of the thing
+    <b>The future</b> of technology is with the young generation. 
+    Our plan is to bring technology closer to all students who are unexposed or have unlimited access to computers.
+
     </Typography>
   </CardContent>
 </Card>
@@ -66,7 +69,8 @@ className = 'carouselImages img-fluid'
 <Card className='carouselCard'>
   <CardContent>
     <Typography>
-    Coffee distribution program<br></br> is now underway as one of the thing
+    <b>Part of out plan is to</b> incorporate proper leadership on all started, pending, on-going and completed projects.
+     With proper accountability, Mosop stands a real chance of realizing it's true potential
     </Typography>
   </CardContent>
 </Card>
@@ -82,8 +86,8 @@ className ='carouselImagesSmall img-fluid'
 <Card className='carouselCard'>
   <CardContent>
     <Typography>
-    Coffee distribution program
-    <br></br>is now underway as one of the thing
+    <b>The journey</b> to branch from consumer based farming to income generation is already underway.
+     Mosop is blessed with fertile land that supports various income generating cash crops.
     </Typography>
   </CardContent>
 </Card>
@@ -96,7 +100,8 @@ className = 'carouselImagesSmall img-fluid'
 <Card className='carouselCard'>
   <CardContent>
     <Typography>
-    Coffee distribution program <br></br>is now underway as one of the thing
+    <b>The future</b> of technology is with the young generation. 
+    Our plan is to bring technology closer to all students who are unexposed or have unlimited access to computers.
     </Typography>
   </CardContent>
 </Card>
@@ -109,7 +114,8 @@ className = 'carouselImagesSmall img-fluid'
 <Card className='carouselCard'>
   <CardContent>
     <Typography>
-    Coffee distribution program<br></br> is now underway as one of the thing
+    <b>Our 5 year</b> incorporate proper leadership on all started, pending, on-going and completed projects.
+     With proper accountability, Mosop stands a real chance of realizing it's true potential
     </Typography>
   </CardContent>
 </Card>
