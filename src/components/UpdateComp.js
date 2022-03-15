@@ -82,7 +82,7 @@ setExpanded(!expanded);
 const classes = useStyles();
 
   return (
-<div>
+<div className='updates_mainDiv'>
 <Row className = {classes.mainupdatesRow}>
 <div className = {classes.updatesheaderText} id = 'updatesheaderText'>
 <h1 style={{color:'#ffa801'}}> Agenda</h1>
