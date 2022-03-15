@@ -7,18 +7,18 @@
   padding: 0% 0% 5% 3% !important;
 }
 .generalcardsRow{
-padding: 0% 0% 0% 1.5% !important;
+padding: 2% 1.5% 0% 1.5% !important;
 }
 .customFooter{
   padding:0% 0% 0% 0% !important;
   /* background-color: white; */
 }
 .carousel_row{
-  padding: 3% 0% 3% 3% !important;
+  padding: 2% 1.5% 2% 1.5% !important;
   background-color: white;
 }
 .carouselCard{
-padding: 0% 0% 0% 4% !important;
+padding:0% 0% 0% 4% !important;
 width: 100% !important;
 height: 100px;
 }
@@ -29,4 +29,7 @@ height: 100px;
 .carouselImagesSmall{
   width: 100vw!important;
   height: 50vh!important;
+}
+.top_updatetext{
+padding: 0% 0% 3% 0% !important;
 }

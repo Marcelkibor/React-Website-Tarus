@@ -40,7 +40,7 @@ height:'100%',
 },
 // card styling for large devices
 [theme.breakpoints.only('lg')]:{
-  width:'390px',
+  width:'385px',
   maxHeight:'100%',
 },
 // card styling for extra large devices

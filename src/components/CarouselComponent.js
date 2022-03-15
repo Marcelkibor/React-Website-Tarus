@@ -26,7 +26,8 @@ componentSpacerSmall:{
   },
 },
 CarouselComponentRow:{
-backgroundColor:'purple'
+backgroundColor:'purple',
+padding:' 10% 0% 0% 0%',
 },
 }));
 function CarouselComponent() {
@@ -35,6 +36,12 @@ const resImg = 'img-fluid'
 return (
 <div>
 <Row className={classes.CarouselComponentRow}>
+  <div>
+  <h1 className= 'top_updatetext' style ={{textAlign:'center',fontFamily: 'Playfair Display, serif',
+  fontStyle: 'italic', backgroundColor: '#1e272e',color:'#ffa801'}}>
+    Updates<br></br><p style ={{color:'white', fontSize:'20px'}}>
+      Keep up with what's happening in Mosop right now</p></h1>
+  </div>
 <Carousel  autoPlay interval="6000" transitionTime="1000" showThumbs={false} className = 'mainCarousel'>
 <div className={classes.componentSpacer}>
 <img 

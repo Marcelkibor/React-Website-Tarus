@@ -175,7 +175,6 @@ we want to put enough food on our tables, and we want a lower cost of living.
 <UpdateComp/>
 </Row>
 <Row style={{backgroundColor:'#1e272e'}} className = 'carousel_row'>
-<h1 style ={{textAlign:'center',fontFamily: 'Playfair Display, serif',fontStyle: 'italic', backgroundColor: '#1e272e',color:'#ffa801'}}>Updates<br></br><p style ={{color:'white', fontSize:'20px'}}>Keep up with what's happening in Mosop right now</p></h1>
 <CarouselComponent/>
 </Row>
 <Row id = 'footer' className='customFooter'>
