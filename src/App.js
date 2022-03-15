@@ -1,22 +1,15 @@
 import './App.css';
-import T from './resources/T.png';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import Navigate from './components/Navigate';
-import HomeCont from './components/HomeCont';
 import Sal from './resources/David.jpg';
 import UpdateComp from './components/UpdateComp';
-import Hicon from './resources/sal.gif';
-import mp from './resources/devi.png';
 import { Grid, makeStyles } from '@material-ui/core';
-import Agenda from './components/Agenda';
 import { BrowserRouter as Router,Route,Routes } from 'react-router-dom';
 import Footer from './components/Footer';
 import smBg from './resources/smBg.jpg';
-import { useState } from 'react';
 import CarouselComponent from './components/CarouselComponent';
 import DraftsIcon from '@mui/icons-material/Drafts';
 import Call from '@mui/icons-material/WifiCalling3';
-import { height } from '@mui/system';
 const myStyles = makeStyles((theme) => ({
   topRow:{
 position:'relative',
@@ -174,9 +167,9 @@ we want to put enough food on our tables, and we want a lower cost of living.
 </p> 
 </div>
 </div>
-<div className={classes.disappearingImage}> 
+{/* <div className={classes.disappearingImage}> 
 <img src={mp} className = 'img-fluid' style={{height:'500px'}}/>
-</div>
+</div> */}
 </Row>
 <Row id ='updates' >
 <UpdateComp/>
