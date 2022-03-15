@@ -26,7 +26,7 @@ componentSpacerSmall:{
   },
 },
 CarouselComponentRow:{
-backgroundColor:'purple',
+backgroundColor:'#2d3436',
 padding:' 10% 0% 0% 0%',
 },
 }));
