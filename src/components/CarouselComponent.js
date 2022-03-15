@@ -16,14 +16,14 @@ componentSpacer:{
  display:'flex',
  alignItems:'center',
  textAlign:'center',
- [theme.breakpoints.down('md')]:{
+ [theme.breakpoints.down('sm')]:{
 display:'none'
  },},
- componentSpacerSmall:{
-[theme.breakpoints.up('sm')]:{
-  display:'none'
+componentSpacerSmall:{
+  [theme.breakpoints.up('md')]:{
+    display:'none',
+  }
 }
- },
 }));
 function CarouselComponent() {
 const classes = customStyles();
