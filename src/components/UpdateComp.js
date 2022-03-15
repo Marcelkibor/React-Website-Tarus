@@ -28,10 +28,6 @@ duration: theme.transitions.duration.shortest,
 }));
 const useStyles = makeStyles((theme) => ({
 cardSpacer: {
-[theme.breakpoints.only('xs')]:{
-  width:'100vw',
-  height:'100%',
-},
 //  card styling for small devices -> okay and done
 [theme.breakpoints.only('xs')]:{
 width:'95vw',
@@ -44,13 +40,13 @@ height:'100%',
 },
 // card styling for large devices
 [theme.breakpoints.only('lg')]:{
-  width:'360px',
-  height:'100%',
+  width:'390px',
+  maxHeight:'100%',
 },
 // card styling for extra large devices
 [theme.breakpoints.only('xl')]:{
   width:'400px',
-  height:'100%',
+  height:'100px',
 },
 },
 imageTransform:{
@@ -70,7 +66,7 @@ updatesheaderText:{
 },
 mainupdatesRow:{
   backgroundColor:'#1e272e',
-  height:'70vh',
+  height:'100%',
   [theme.breakpoints.down('sm')]:{
     height:'100%',
   }
