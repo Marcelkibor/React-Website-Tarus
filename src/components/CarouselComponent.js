@@ -69,7 +69,7 @@ className = 'carouselImages img-fluid'
 <Card className='carouselCard'>
   <CardContent>
     <Typography>
-    <b>Part of out plan is to</b> incorporate proper leadership on all started, pending, on-going and completed projects.
+    <b>Our plan is to</b> incorporate proper leadership on all started, pending, on-going and completed projects.
      With proper accountability, Mosop stands a real chance of realizing it's true potential
     </Typography>
   </CardContent>
