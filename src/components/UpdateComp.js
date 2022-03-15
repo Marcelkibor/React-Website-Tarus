@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
 cardSpacer: {
 //  card styling for small devices -> okay and done
 [theme.breakpoints.only('xs')]:{
-width:'95vw',
+width:'100vw',
 height:'100%',
 },
 // card styling for medium devices
