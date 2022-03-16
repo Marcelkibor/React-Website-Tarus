@@ -33,7 +33,9 @@ height: 100px;
 .top_updatetext{
 padding: 0% 0% 3% 0% !important;
 }
-.updates_mainDiv{
-  padding: 2% 0% 0% 0% !important;
-  background-color: #1e272e;
+.footerLinks{
+  padding-left: 1% !important;
+}
+.footerHeaders{
+  padding-left: 0.5% !important;
 }

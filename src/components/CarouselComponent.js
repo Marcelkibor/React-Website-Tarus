@@ -13,7 +13,7 @@ const customStyles = makeStyles((theme)=>({
 componentSpacer:{
  width:'80vw',
  height:'100%',
- backgroundColor:'orange',
+ backgroundColor:'#fa983a',
  display:'flex',
  alignItems:'center',
  textAlign:'center',
@@ -49,7 +49,7 @@ src={car1}
 className ='carouselImages img-fluid'/>
 <Card className='carouselCard'>
 <CardContent>
-<Typography>
+<Typography style={{textAlign:'left'}}>
 <b>The journey</b> to branch from consumer based farming to income generation is already underway.
 Mosop is blessed with fertile land that supports various income generating cash crops.
 </Typography>
@@ -62,7 +62,7 @@ src={car2}
 className = 'carouselImages img-fluid'/>
 <Card className='carouselCard'>
 <CardContent>
-<Typography>
+<Typography style={{textAlign:'left'}}>
 <b>The future</b> of technology is with the young generation. 
 Our plan is to bring technology closer to all students who are unexposed or have unlimited access to computers.
 </Typography>
@@ -75,8 +75,8 @@ src={car3}
 className = 'carouselImages img-fluid'/>
 <Card className='carouselCard'>
 <CardContent>
-<Typography>
-<b>Our plan is to</b> incorporate proper leadership on all started, pending, on-going and completed projects.
+<Typography style={{textAlign:'left'}}>
+<b>Our plan is to</b> incorporate proper leadership on all on-going, pending and completed projects.
 With proper accountability, Mosop stands a real chance of realizing it's true potential
 </Typography>
 </CardContent>
@@ -91,7 +91,7 @@ src={car1}
 className ='carouselImagesSmall img-fluid'/>
 <Card className='carouselCard'>
 <CardContent>
-<Typography>
+<Typography style={{textAlign:'left'}}>
 <b>The journey</b> to branch from consumer based farming to income generation is already underway.
 Mosop is blessed with fertile land that supports various income generating cash crops.
 </Typography>
@@ -104,7 +104,7 @@ src={car2}
 className = 'carouselImagesSmall img-fluid'/>
 <Card className='carouselCard'>
 <CardContent>
-<Typography>
+<Typography style={{textAlign:'left'}}>
 <b>The future</b> of technology is with the young generation. 
 Our plan is to bring technology closer to all students who are unexposed or have unlimited access to computers.
 </Typography>
@@ -117,8 +117,8 @@ src={car3}
 className = 'carouselImagesSmall img-fluid'/>
 <Card className='carouselCard'>
 <CardContent>
-<Typography>
-<b>Our 5 year</b> incorporate proper leadership on all started, pending, on-going and completed projects.
+<Typography style={{textAlign:'left'}}>
+<b>Our 5 year plan is to </b> incorporate proper leadership on all on-going, pending and completed projects.
 With proper accountability, Mosop stands a real chance of realizing it's true potential
 </Typography>
 </CardContent>

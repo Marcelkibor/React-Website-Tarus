@@ -171,10 +171,10 @@ we want to put enough food on our tables, and we want a lower cost of living.
 <img src={mp} className = 'img-fluid' style={{height:'500px'}}/>
 </div> */}
 </Row>
-<Row id ='updates' >
+<Row id ='agenda' >
 <UpdateComp/>
 </Row>
-<Row style={{backgroundColor:'#1e272e'}} className = 'carousel_row'>
+<Row style={{backgroundColor:'#1e272e'}} className = 'carousel_row' id = 'updates'>
 <CarouselComponent/>
 </Row>
 <Row id = 'footer' className='customFooter'>
