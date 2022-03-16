@@ -1,7 +1,7 @@
 import './App.css';
 import { Col, Row } from 'react-bootstrap';
 import Navigate from './components/Navigate';
-import Sal from './resources/David.jpg';
+import DavidHome from './resources/David.jpg';
 import UpdateComp from './components/UpdateComp';
 import { Grid, makeStyles } from '@material-ui/core';
 import { BrowserRouter as Router,Route,Routes } from 'react-router-dom';
@@ -15,7 +15,7 @@ const myStyles = makeStyles((theme) => ({
 position:'relative',
   },
   images: {
-    backgroundImage: `url(${Sal})`,
+    backgroundImage: `url(${DavidHome})`,
     height: '100vh',
     width: '100%',    
     position:'relative',

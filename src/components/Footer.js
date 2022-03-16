@@ -2,7 +2,6 @@ import { Container } from '@mui/material';
 import { Box } from '@mui/material';
 import { Link } from '@mui/material';
 import { Grid } from '@mui/material';
-import footerImage from '../resources/footer.jpg';
 import footerImage2 from '../resources/footer2.jpg';
 import React from 'react';
 import TwitterIcon from '@mui/icons-material/Twitter';

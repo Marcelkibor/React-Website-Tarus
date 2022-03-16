@@ -1,6 +1,5 @@
 import React from 'react'
 import '../App.css'
-import Sal from '../resources/sal.gif' 
 import {Navbar,Nav} from 'react-bootstrap';
 import uda from '../resources/uda.png'
 import { useState } from 'react';
